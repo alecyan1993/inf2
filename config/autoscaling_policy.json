@@ -1,0 +1,14 @@
+{
+  "TargetValue": 10,
+  "CustomizedMetricSpecification": {
+    "MetricName": "ApproximateNumberOfMessagesVisible",
+    "Namespace": "AWS/SQS",
+    "Dimensions": [
+      {"Name": "QueueName", "Value": "dreamshaper-inf2-requests-queue.fifo"}
+    ],
+    "Statistic": "Maximum",
+    "Unit": "Count"
+  },
+  "ScaleInCooldown": 3600,
+  "ScaleOutCooldown": 60
+}

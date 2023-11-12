@@ -1,0 +1,20 @@
+DEPLOYED_MODEL_NAME: 'inf2-dreamshaper-v7-lora-dynamic-t2i-i2i'
+
+MODEL_PATH: 'models/dreamshaper_v7_512_768_dynamic_t2i_i2i'
+
+AWS_ROLE: 'arn:aws:iam::336473275955:role/service-role/AmazonSageMaker-ExecutionRole-20230501T113494'
+
+S3_ARTIFACT_PREFIX: 'inf2_deploy/dreamshaper-v7-dynamic-t2i-i2i'
+
+S3_BUCKET: 'sagemaker-us-east-1-336473275955'
+
+MODEL_ARTIFACT_PATH: 'artifact'
+
+SERVING_PROPERTIES_PATH: 'config/serving.properties'
+
+REQUIREMENTS_PATH: 'config/requirements.txt'
+
+INFERENCE_IMAGE_URI: '336473275955.dkr.ecr.us-east-1.amazonaws.com/neuron-djl-inference:latest'
+
+VERSION: '01'
+
